@@ -25,7 +25,7 @@ const mocks = {
 
 const server = new ApolloServer({ typeDefs, mocks: mocks });
 
-server.listen().then(() => {
+server.listen(4000).then(() => {
   console.log(`
     🚀  Server is running!
     🔉  Listening on port 4000
