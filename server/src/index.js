@@ -4,8 +4,9 @@ const typeDefs = require("./schema");
 // dummy data
 const mocks = {
   Query: () => ({
-    tracksForHome: () => [...new Array(6)],
+    tracks: () => [...new Array(6)],
   }),
+
   Track: () => ({
     id: () => "track_01",
     title: () => "Astro Kitty, Space Explorer",
